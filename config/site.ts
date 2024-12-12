@@ -1,28 +1,28 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Portafolio",
+  description: "Diego Valenzuela González - Developer Front-End and VideoGames",
   navItems: [
     {
-      label: "Home",
+      label: "Sobre Mí",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Proyectos",
+      href: "/projects",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Curriculum",
+      href: "/Curriculum",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Habilidades",
+      href: "/skills",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Contacto",
+      href: "/contact",
     },
   ],
   navMenuItems: [
@@ -65,5 +65,6 @@ export const siteConfig = {
     docs: "/",
     discord: "/",
     sponsor: "https://ko-fi.com/diegodev",
+    contact: "/",
   },
 };
