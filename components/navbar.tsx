@@ -99,7 +99,7 @@ export const Navbar = () => {
           href={siteConfig.links.sponsor}
           startContent={<img src={kofi.src} alt="Ko-fi" className="flex" style={{ width: '100%', height: '100%' }} />}
           variant="flat"
-          style={{ width: '100px', height: '30px' }}
+          style={{ width: '150px', height: '30px' }}
         >
         </Button>
         </NavbarItem>
