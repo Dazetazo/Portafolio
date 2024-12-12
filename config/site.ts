@@ -64,6 +64,6 @@ export const siteConfig = {
     twitter: "/",
     docs: "/",
     discord: "/",
-    sponsor: "/",
+    sponsor: "https://ko-fi.com/diegodev",
   },
 };

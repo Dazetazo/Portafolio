@@ -14,14 +14,13 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
-
+import kofi from "@/public/assets/kofi2.png";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
   TwitterIcon,
   GithubIcon,
   DiscordIcon,
-  HeartFilledIcon,
   SearchIcon,
   Logo,
 } from "@/components/icons";
@@ -93,16 +92,16 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
         <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
-            variant="flat"
-          >
-            Sponsor
-          </Button>
+        <Button
+          isExternal
+          as={Link}
+          className="text-sm font-normal text-default-600 bg-default-100 p-0 m-0 border-none"
+          href={siteConfig.links.sponsor}
+          startContent={<img src={kofi.src} alt="Ko-fi" className="flex" style={{ width: '100%', height: '100%' }} />}
+          variant="flat"
+          style={{ width: '100px', height: '30px' }}
+        >
+        </Button>
         </NavbarItem>
       </NavbarContent>
 
